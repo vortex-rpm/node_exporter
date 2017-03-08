@@ -31,10 +31,12 @@ cd $GOPATH/%{_git_slug}
 git checkout v%{version}
 
 %build
+export GOPATH=$(pwd)/_build
 cd $GOPATH/%{_git_slug}
 make
 
 %install
+export GOPATH=$(pwd)/_build
 mkdir -vp %{buildroot}/var/lib/prometheus
 mkdir -vp %{buildroot}/usr/bin
 mkdir -vp %{buildroot}%{_initddir}
