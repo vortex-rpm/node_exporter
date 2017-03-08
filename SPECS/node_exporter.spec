@@ -72,7 +72,7 @@ fi
 %{_initddir}/%{name}
 %config(noreplace) /etc/default/%{name}
 %attr(755, prometheus, prometheus)/var/lib/prometheus
-%doc CHANGELOG.md LICENSE NOTICE README.md
+%doc _build/%{_git_slug}/CHANGELOG.md _build/%{_git_slug}/LICENSE _build/%{_git_slug}/NOTICE _build/%{_git_slug}/README.md
 
 %changelog
 * Wed Mar 08 2017 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.0-0.git20170119.vortex
