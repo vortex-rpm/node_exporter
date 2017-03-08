@@ -72,5 +72,5 @@ fi
 %doc CHANGELOG.md LICENSE NOTICE README.md
 
 %changelog
-* Wed 08 Mar 2017 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.0-0.git20170119.vortex
+* Wed Mar 08 2017 Ilya Otyutskiy <ilya.otyutskiy@icloud.com> - 0.0-0.git20170119.vortex
 - Initial packaging
