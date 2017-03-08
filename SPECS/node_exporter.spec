@@ -16,6 +16,7 @@ Source3: %{name}.init
 Requires(post): chkconfig
 Requires(preun): chkconfig, initscripts
 Requires(pre): shadow-utils
+Requires: daemonize
 BuildRequires: golang, git
 
 %description
