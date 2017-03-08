@@ -38,7 +38,7 @@ make
 %install
 export GOPATH=$(pwd)/_build
 mkdir -vp %{buildroot}/var/lib/prometheus
-mkdir -vp %{buildroot}/usr/bin
+mkdir -vp %{buildroot}/usr/sbin
 mkdir -vp %{buildroot}%{_initddir}
 mkdir -vp %{buildroot}/etc/default
 install -m 755 $GOPATH/%{_git_slug}/%{name} %{buildroot}/usr/sbin/%{name}
